@@ -3,7 +3,8 @@ name: deploy to production on release
 on:
     release:
         types: [created]
-
+    workflow_dispatch:
+      
 permissions:
     pages: write
     deployments: write
